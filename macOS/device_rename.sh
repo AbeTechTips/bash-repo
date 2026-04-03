@@ -1,7 +1,7 @@
 #!/bin/bash
 # This script renames the computer and the local hostname on macOS.
 
-SERIAL_NUMBER=$(system_profiler SPHardwareDataType | awk '/Serial Number/ {print $3}')
+SERIAL_NUMBER=$(system_profiler SPHardwareDataType | awk '/Serial Number/ {print $4}')
 NEW_NAME="Mac-${SERIAL_NUMBER}"
 
 
